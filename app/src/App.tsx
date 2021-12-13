@@ -87,18 +87,18 @@ function App() {
 
     return (
         <div className="App">
-            <Canvas className="draw-pad"
+            <Canvas data-testid="main-canvas" className="draw-pad"
                     onMouseDown={handleMouseDown}
                     onMouseUp={handleMouseUp}
                     onMouseMove={handleMouseMove}
                     strokes={currentStroke ? [...strokes, currentStroke] : strokes}/>
-            <div className="btn btn-red" onClick={() => setCurrentColor("#ff0000")}/>
-            <div className="btn btn-green" onClick={() => setCurrentColor("#00FF00")}/>
-            <div className="btn btn-blue" onClick={() => setCurrentColor("#0000ff")}/>
-            <div className="btn btn-rect" onClick={() => setCurrentType("rect")}>Rectangle</div>
-            <div className="btn btn-line" onClick={() => setCurrentType("line")}>Line</div>
-            <div className="btn btn-stroke" onClick={() => setCurrentType("stroke")}>Stroke</div>
-            <div className="btn btn-trash" onClick={() => trash()}>Clear</div>
+            <button className="btn btn-red" onClick={() => setCurrentColor("#ff0000")}/>
+            <button className="btn btn-green" onClick={() => setCurrentColor("#00FF00")}/>
+            <button className="btn btn-blue" onClick={() => setCurrentColor("#0000ff")}/>
+            <button className="btn btn-rect" onClick={() => setCurrentType("rect")}>Rectangle</button>
+            <button className="btn btn-line" onClick={() => setCurrentType("line")}>Line</button>
+            <button className="btn btn-stroke" onClick={() => setCurrentType("stroke")}>Stroke</button>
+            <button className="btn btn-trash" onClick={() => trash()}>Clear</button>
         </div>
     );
 }
