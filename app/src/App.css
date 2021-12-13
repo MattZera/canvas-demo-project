@@ -1,0 +1,57 @@
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+}
+
+.draw-pad {
+  height: 600px;
+  width: 800px;
+  margin: auto;
+}
+
+.btn {
+  height: 5em;
+  width: 5em;
+  bottom: 1em;
+  text-align: center;
+  line-height: 5em
+}
+
+.btn {
+  width: 5em;
+  bottom: 1em;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.btn-red {
+  left: 1em;
+  background-color: #FF0000;
+}
+
+.btn-green {
+  left: 7em;
+  background-color: #00FF00;
+}
+
+.btn-blue {
+  left: 13em;
+  background-color: #0000FF;
+}
+
+.btn-rect {
+  left: 20em;
+}
+
+.btn-line {
+  left: 27em;
+}
+
+.btn-stroke {
+  left: 34em;
+}
+
+.btn-trash {
+  left: 41em;
+}
